@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Persona here.
+ * Clase Persona para guardar los datos correspondientes a los propietarios
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Oscar Charro Rivera (oschariv)
+ * @version 27-04-2017
  */
 public class Persona
 {
@@ -12,17 +12,24 @@ public class Persona
     private String dni;
 
     /**
-     * Constructor for objects of class Persona
+     * Constructor de la clase Persona
+     * @param nombre String para obtener nombre del propietario
+     * @param dni String para obtener el dni del propietario
      */
     public Persona(String nombre, String dni)
     {
         this.nombre = nombre;
         this.dni = dni;
     }
-
+    
+    /**
+     * Metodo toString para imprime todo la informacion referente al propietario.
+     * @return cadenaADevolver - String para retorno de la informacion del propietario
+     */
     public String toString()
     {
-        String cadenaADevolver = "Propietario del Barco:\nNombre: " + nombre + ".\nDNI: " + dni+ ".";
+        String cadenaADevolver = "Propietario del Barco:\nNombre: " + nombre + ".\nDNI: " 
+                                    + dni+ ".";
         return cadenaADevolver;
     }
 }

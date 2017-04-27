@@ -32,7 +32,8 @@ public class Puerto
             }            
         }
         return alquiler;
-    }    
+    }    
+
 
     public void verEstadoAmarres()
     {
@@ -40,7 +41,7 @@ public class Puerto
         {
             if(amarres[i] == null)
             {
-                System.out.println("El amarre " + i + " está vacio");
+                System.out.println("El amarre " + i + " esta vacio");
             }
             else
             {
