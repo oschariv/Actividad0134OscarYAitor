@@ -42,7 +42,7 @@ public class Alquiler
     public String toString()
     {
         String cadena = "";
-        cadena += "NºDias de ocupacion: " + diasOcupacion + "\n" + "Posicion del amarre: " + posicionAmarre + "\n" + "Barco: " + barco + "\n" + "Precio del alquiler: " + getPrecioAlquiler();
+        cadena += "NÂºDias de ocupacion: " + diasOcupacion + "\n" + "Posicion del amarre: " + posicionAmarre + "\n" + "Barco: " + barco + "\n" + "Precio del alquiler: " + getPrecioAlquiler();
         return cadena;
     }
 }
