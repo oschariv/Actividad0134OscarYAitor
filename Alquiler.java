@@ -1,3 +1,7 @@
+
+/**
+ * Clase Alquiler
+ */
 public class Alquiler
 {
     private static final int VALOR_MULTIPLICADOR_ESLORA = 10;
@@ -5,7 +9,13 @@ public class Alquiler
     private int diasOcupacion;
     private int posicionAmarre;
     private Barco barco;
-    
+
+    /**
+     * Constructor de la clase Alquiler
+     * @param numDias int
+     * @param barco Barco
+     * @param amarre int
+     */
     public Alquiler(int numDias, Barco barco, int amarre)
     {
         diasOcupacion = numDias;
@@ -13,6 +23,10 @@ public class Alquiler
         posicionAmarre = amarre;
     }
 
+    /**
+     * Metodo que calcula el precio del alquiler y te lo devuelve.
+     * @return float
+     */
     public float getPrecioAlquiler()
     {
         float precioAlquiler = 0;
@@ -20,7 +34,11 @@ public class Alquiler
         precioAlquiler = (diasOcupacion*(valorEslora*VALOR_MULTIPLICADOR_ESLORA))+(VALOR_MULTIPLICADOR_BERNUA*barco.getCoeficienteBernua());
         return precioAlquiler;
     }
-    
+
+    /**
+     * Metodo que devuelve una cadena String
+     * @return String
+     */
     public String toString()
     {
         String cadena = "";
